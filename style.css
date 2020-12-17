@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* border: solid black; */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin: 0 5%;
+}
+
+
+
+/* Navbar menu */
+.navbar {
+    width: 100vw;
+    /* position: fixed; */
+    position: absolute;
+    top: 0;
+    color: white;
+    /* background-color: #333333; */
+    font-size: 1.2em;
+    /* background-color: #3a3a3a8e; */
+    z-index: 1000;
+}
+
+
+.navbar .nav-menu {
+    display: flex;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-menu .menu-item {
+    display: flex;
+    flex-basis: 60%;
+    justify-content: space-between;
+}
+
+.navbar .nav-menu ul {
+    display: flex;
+    flex-basis: 85%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-menu .menu-item ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav-menu .menu-item ul li a:hover {
+    color: #ffc200;
+}
+
+
+/* cover */
+
+.cover {
+    background-image: url(img/resto1.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.cover .cover-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    height: 100vh;
+}
+
+.cover .cover-item {
+    
+    position: relative;
+    top: 25vh;
+    left: 40vw;
+    width: 45%;
+}
+
+.cover .cover-item h1 {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 7em;
+    color: #ffc200;
+    font-weight: 300;
+
+}
+
+.cover .cover-item p {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cover .cover-item .btn {
+    background-color: #ffc200;
+    padding: 10px 50px;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.cover .cover-item .btn:hover {
+    background-color: #e0ad02;
+}
+
+
+/* best seller */
+.best-seller {
+    color: #333333;
+    background-color: #fff;
+    text-align: center;
+}
+
+.best-seller .container {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.best-seller .best-title {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 4em;
+    font-weight: 300;
+}
+
+.best-seller p {
+    display: block;
+    width: 60%;
+    margin: auto;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}
+.best-seller .best-menu {
+    display: grid;
+    margin: 0 10%;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+.best-seller .menu-list {
+    /* border: solid black; */
+    width: 200px;
+}
+
+.best-seller .menu-list img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.best-seller .menu-list h2 {
+    font-size: 2em;
+    font-family: 'Grand Hotel', cursive;
+    font-weight: 300;
+}
+
+.best-seller .menu-list p {
+    font-size: 0.8em;
+    display: inline;
+}
+
+
+/* product */
+.product {
+    background-color: #fff;
+    background-image: url(img/resto2.png);
+    background-size: cover;
+    height: 800px;
+}
+
+.product .container {
+    /* height: 800px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+.product .product-img {
+    position: relative;
+    top: 250px;
+}
+
+.product .product-img img {
+    width: 450px;
+    border-radius: 50%;
+}
+
+.product .product-text {
+    position: relative;
+    top: 400px;
+    height: 300px;
+}
+
+.product .product-text h1 {
+    font-family: 'Grand Hotel', cursive;
+    font-weight: 300;
+    font-size: 5em;
+    color: #ffc200;
+
+}
+
+.product .product-text p {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.product .product-text .btn {
+    background-color: #ffc200;
+    padding: 10px 50px;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.product .product-text .btn:hover {
+    background-color: #e0ad02;
+}
+
+
+/* statistic */
+.statistic {
+    background-image: url(img/resto3.png);
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    text-align: center;
+}
+
+.statistic .title {
+    padding-top: 100px;
+    color: #ffc200;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 5em;
+    font-weight: 300;
+}
+
+.statistic .desc {
+    display: inline-block;
+    color: white;
+    font-size: 1.3em;
+    width: 70%;
+}
+
+.statistic .statistic-item {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 80%;
+    margin: 100px auto 0 auto;
+    justify-content: space-between;
+}
+
+.statistic .item {
+    width: 220px;
+    height: 220px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.statistic .item h1 {
+    
+    color: #ffc200;
+    font-family: cursive;
+    margin-top: 50px;
+    font-size: 2.7em;
+}
+
+.statistic .item p {
+    color: #fff;
+    font-size: 1.7em;
+    text-transform: uppercase;
+}
+
+
+/* product2 */
+.product2 {
+    background-color: #fff;
+    background-image: url(img/resto4.png);
+    background-size: cover;
+    height: 800px;
+}
+
+.product2 .container {
+    /* height: 800px; */
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.product2 .product-img {
+    position: relative;
+    top: 150px;
+}
+
+.product2 .product-img img {
+    width: 450px;
+    border-radius: 50%;
+}
+
+.product2 .product-text {
+    position: relative;
+    top: 200px;
+    height: 300px;
+    width: 70%;
+}
+
+.product2 .product-text h1 {
+    font-family: 'Grand Hotel', cursive;
+    font-weight: 300;
+    font-size: 5em;
+    color: #ffc200;
+    margin-bottom: 10px;
+
+}
+
+.product2 .product-text p {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.product2 .product-text .btn {
+    background-color: #ffc200;
+    padding: 10px 50px;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.product2 .product-text .btn:hover {
+    background-color: #e0ad02;
+}
+
+/* quote */
+.quote {
+    background-image: url(img/covermain.jpg);
+    height: 800px;
+    background-size: cover;
+}
+
+.quote-clr {
+    background-color: #ffc400ce;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.quote .quote-text {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.quote .quote-text h1 {
+    margin-top: 70px;
+    color: #333333;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 5em;
+    font-weight: 300;
+}
+
+.quote .quote-text p {
+    padding-top: 250px;
+    color: #333333;
+    font-size: 2.3em;
+
+}
+
+
+/* subscribe */
+.subscribe {
+    height: 800px;
+    background-image: url(img/resto5.png);
+    background-size: cover;
+}
+
+.subscribe .subs-item {
+    color: #333333;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.subscribe .subs-item h1 {
+    padding-top: 200px;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 5em;
+    font-weight: 300;
+}
+
+.subscribe .subs-item p {
+    font-size: 1.7em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.subscribe .subs-item .subs-form .subs {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 350px;
+    border: none;
+    font-size: 1.3em;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe .subs-item .subs-form .btn {
+    display: inline-block;
+    margin-left: -5px;
+    padding: 10px 20px;
+    width: 150px;
+    border: none;
+    font-size: 1.3em;
+    background-color: #ffc200;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+
+.subscribe .subs-item .subs-form .btn:hover {
+    background-color: #e0ad02;
+}
+
+
+/* footer */
+footer {
+    background-color: #333333;
+    height: 800px;
+    color: #fff;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    gap: 20px;
+    height: 100%;
+    align-content: center;
+}
+
+footer h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+footer .desc-us p {
+    font-size: 1.1em;
+    display: inline-block;
+    width: 80%;
+}
+
+footer li {
+    margin-bottom: 15px;
+}
+
+footer li a {
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer .social {
+    margin-top: 30px;
+}
+
+footer .social a {
+    color: #fff;
+}
+
+footer .social .fab {
+    margin-right: 15px;
+}
+
+
